@@ -1,31 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:regular,700);
 html, body{
     margin: 0;
     text-align: center;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif ;
 }
 .wrapper {
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    background-color: #ccc;
+    background-color:#2F4F4F;
+}
+.title{
+    padding: 5% 0 2%;
+    font-size: 4em;
+    margin: 0;
+    color:aliceblue;
+}
+.input{
+    /* position: absolute;
+    visibility: hidden; */
 }
 .slider-box {
     width: 60%;
     height: 60%;
-    border: 4px solid #fff;
+    /* border: 4px solid #fff; */
     margin: 0 auto;
 }
 .slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
 }
 .slide {
+    
 }
 .slider__slide {
-    position: relative;
+    min-width: 100%;
+    transition: .5s all ease;
 }
 .slide__img {
+    border-radius: 50px;
+    border: 2px solid aliceblue;
     width: 100%;
+    height: 80%;
+    box-sizing: border-box;
 }
 .slider__description {
+    font-size: 1.5em;
+    color:aliceblue;
+    text-align:start;
 }
 .toggles {
+    display: flex; 
+    gap: 15px;
+    margin: 0 auto;
 }
 .toggle-link {
+    width: 35px;
+    height: 12px;
+    border-radius: 12px;
+    background-color:lightgreen;
+    cursor: pointer;
+    opacity: 0.2;
+    box-sizing: border-box;
+}
+.toggle-link:hover{
+    transform: scale(1.2);
+    opacity: 0.5;
+    box-shadow: 0px 0px 5px 2px aliceblue;
+}
+#slide1:checked ~ .slide{
+    margin-left: 0;
+}
+#slide2:checked ~ .slide{
+    margin-left: -100%;
+}
+#slide3:checked ~ .slide{
+    margin-left: -200%;
+}
+#slide4:checked ~ .slide{
+    margin-left: -300%;
 }
