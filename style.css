@@ -16,8 +16,8 @@ html, body{
     color:aliceblue;
 }
 .input{
-    /* position: absolute;
-    visibility: hidden; */
+    position: absolute;
+    visibility: hidden;
 }
 .slider-box {
     width: 60%;
@@ -29,11 +29,8 @@ html, body{
     width: 100%;
     height: 100%;
     display: flex;
-    gap: 25px;
+    gap: 5%;
     overflow: hidden;
-}
-.slide {
-    
 }
 .slider__slide {
     min-width: 100%;
@@ -45,6 +42,7 @@ html, body{
     width: 100%;
     height: 80%;
     box-sizing: border-box;
+    margin-bottom: 2%;
 }
 .slider__description {
     font-size: 1.5em;
@@ -53,8 +51,11 @@ html, body{
 }
 .toggles {
     display: flex; 
-    gap: 15px;
+    gap: 25px;
     margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .toggle-link {
     width: 35px;
@@ -64,21 +65,31 @@ html, body{
     cursor: pointer;
     opacity: 0.2;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .toggle-link:hover{
     transform: scale(1.2);
     opacity: 0.5;
     box-shadow: 0px 0px 5px 2px aliceblue;
 }
-#slide1:checked ~ .slide{
-    margin-left: 0;
+
+
+#slide1:checked ~ .slide {
+    margin-left: 0; 
 }
 #slide2:checked ~ .slide{
-    margin-left: -100%;
+    margin-left: -105%;
 }
 #slide3:checked ~ .slide{
-    margin-left: -200%;
+    margin-left: -210%;
 }
 #slide4:checked ~ .slide{
-    margin-left: -300%;
+    margin-left: -315%;
 }
+/* .round{
+    width: 50px;
+    height: 30px;
+} */
