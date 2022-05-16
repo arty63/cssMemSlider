@@ -12,37 +12,41 @@
     <div class="wrapper">
         <h1 class="title">Css mem Slider</h1>
         <div class="slider-box">
-            
-
+            <input type="radio" name="radio" id="slide1" class="input" checked>
+            <input type="radio" name="radio" id="slide2" class="input">
+            <input type="radio" name="radio" id="slide3" class="input">
+            <input type="radio" name="radio" id="slide4" class="input">
             <div class="slider">
-                <input type="radio" name="radio" id="slide1" class="input" checked>
-                <input type="radio" name="radio" id="slide2" class="input">
-                <input type="radio" name="radio" id="slide3" class="input">
-                <input type="radio" name="radio" id="slide4" class="input">
-                <div class="slider__slide slide">
-                    <img src="./assets/img/stark.jpg" alt="stark" class="slide__img">
-                    <span class="slider__description">Когда нажал F12 в браузере</span>
-                </div>
-                <div class="slider__slide">
-                    <img src="./assets/img/chicken.jpg" alt="chicken" class="slide__img">
-                    <span class="slider__description">Тайна вселенной раскрыта</span>
-                </div>
-                <div class="slider__slide">
-                    <img src="./assets/img/stark.jpg" alt="" class="slide__img">
-                    <span class="slider__description">Когда нажал F12 в браузере</span>
-                </div>
-                <div class="slider__slide">
-                    <img src="./assets/img/stark.jpg" alt="" class="slide__img">
-                    <span class="slider__description">Когда нажал F12 в браузере</span>
-                </div>
                 
+                    <div class="slider__slide slide">
+                        <img src="./assets/img/stark.jpg" alt="stark" class="slide__img">
+                    </div>
+                    <div class="slider__slide">
+                        <img src="./assets/img/chicken.jpg" alt="chicken" class="slide__img">   
+                    </div>
+                    <div class="slider__slide">
+                        <img src="./assets/img/jsdev.jpg" alt="jsdev" class="slide__img">
+                    </div>
+                    <div class="slider__slide">
+                        <img src="./assets/img/fullstack.jpg" alt="fullstack" class="slide__img">
+                    </div>  
             </div>
-            <div class="toggles">
-                <div class="round"><label for="slide1" class="toggle-link"></label></div>
-                <div class="round"><label for="slide2" class="toggle-link"></label></div>
-                <div class="round"><label for="slide3" class="toggle-link"></label></div>
-                <div class="round"><label for="slide4" class="toggle-link"></label></div>
+            <div class="box">
+                <div class="text">
+                    <span class="slider__description slide-text">Когда нажал F12 в браузере</span>
+                    <span class="slider__description">Тайна вселенной раскрыта</span>
+                    <span class="slider__description">78% разработчиков Java Script плохо разбираются в матиматике. Я рад быть частью других 32%.</span>
+                    <span class="slider__description">Я не умею летать. Я не умею ходить. Я не умею плавать. Full stack developer.</span>
+                </div>
+                <div class="toggles">
+                    <div class="round"><label for="slide1" class="toggle-link"><div class="inside"></div></label></div>
+                    <div class="round"><label for="slide2" class="toggle-link"></label></div>
+                    <div class="round"><label for="slide3" class="toggle-link"></label></div>
+                    <div class="round"><label for="slide4" class="toggle-link"></label></div>
+                </div>
             </div>
+            
+            
         </div>
         
     </div>
