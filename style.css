@@ -78,21 +78,30 @@ html, body{
 #slide4:checked ~ .slider>.slide{
     margin-left: -315%;
 }
-#slide1:checked ~ .round .toggle-link{
+
+#slide1:checked ~ .box .toggles .round:nth-child(1)>.toggle-link{
     background-color:lightyellow;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    opacity: 0.5;
+    box-shadow: 0px 0px 2px 2px aliceblue;
 }
-#slide2:checked ~ .round .toggle-link{
+#slide2:checked ~ .box .toggles .round:nth-child(2)>.toggle-link{
     background-color:lightyellow;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    opacity: 0.5;
+    box-shadow: 0px 0px 2px 2px aliceblue;
 }
-#slide3:checked ~ .round .toggle-link{
+#slide3:checked ~ .box .toggles .round:nth-child(3)>.toggle-link{
     background-color:lightyellow;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    opacity: 0.5;
+    box-shadow: 0px 0px 2px 2px aliceblue;
 }
-#slide4:checked ~ .round .toggle-link{
+#slide4:checked ~ .box .toggles .round:nth-child(4)>.toggle-link{
     background-color:lightyellow;
-    transform: scale(1.5);
+    transform: scale(1.1);
+    opacity: 0.5;
+    box-shadow: 0px 0px 2px 2px aliceblue;
 }
 .round{
     width: 50px;
