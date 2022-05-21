@@ -16,7 +16,6 @@ html, body{
     color:aliceblue;
 }
 .input{
-    position: absolute;
     visibility: hidden;
 }
 .slider-box {
@@ -149,6 +148,17 @@ html, body{
     margin-left: -315%;
 }
 @media (max-width: 769px) {
+    .wrapper{
+        height: 100%;
+    }
+    .title{
+        padding: 5% 0 2%;
+    font-size: 2em;
+    }
+    .slider-box{
+        width: 85%;
+        height: auto;
+    }
     .box{
         flex-direction: column;
         justify-content: center;
@@ -159,11 +169,18 @@ html, body{
         width: 100%;
         align-items: center;
         margin-bottom: 5%;
+        order: 1;
     }
     .slider__description {
-        text-align: center;
+        text-align: left;
+        font-size: 1em;
+        
     }
     .slider {
         height: auto;
     }
+    .slide__img {
+        border-radius: 5%;
+        width: 100%;
   }
+}
